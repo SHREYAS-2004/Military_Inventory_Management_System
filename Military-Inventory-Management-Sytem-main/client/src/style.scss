@@ -1,0 +1,261 @@
+// *, *::before, *::after {
+//     box-sizing: border-box;
+// }
+
+.app{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width : "100vw";
+    height : "100vh";
+    padding: 0;
+    margin: 0;
+
+    //Home page
+    .home{        
+        background-image: url("/weapons.jpg");
+        width : 100vw;
+        height : 100vh;
+
+        .homecontainer{
+            color: aliceblue;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 200px;
+            margin: 0 auto;
+            font-size: xx-large;
+
+            button{
+                width: 150px;
+            }
+        }
+    }
+
+    // Allocate resource page
+
+    .allocateresource{
+        background-image: url("/allocate-resource.jpg");
+        background-size: cover;
+        width:100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .heading{
+            margin-top: -150px;
+            color:lightgray;
+            margin-bottom: 30px;
+        }
+
+        .Card{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+            width: 400px;
+            
+            Button{
+                width: 100px;
+            }
+        }
+    }
+
+    // Product entry page
+
+    .productentry{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        .Card{
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 400px;
+
+            Button{
+                width: 150px;
+            }
+        }
+    }
+
+    // Admin navbar
+
+    .adminnavbar{
+        height: 75px;
+        width: 100vw;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container{
+            display: flex;
+            gap: 20px;
+
+            Button{
+                height: 35px;
+            }
+        }
+    }
+
+    // admin Home
+
+    .admin-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 30px;
+        background-color: #f0f2f5;
+        min-height: 100vh;
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+
+            .content {
+                text-align: center;
+                color: #333;
+            }
+
+            .custom-button {
+                background-color: #007bff;
+                color: white;
+                font-weight: bold;
+                padding: 10px 20px;
+                width: 100%;
+                max-width: 200px;
+                transition: background-color 0.3s ease;
+            }
+
+            .custom-button:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    //allocate Resources
+    .allocatecontainer{
+        height: auto;
+        
+        .view-allocation{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            Button{
+                width : 200px;
+            }
+        }
+        
+    }
+
+    // addItem container
+
+    .addItemcontainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+    
+        .itemcard {
+            width: 350px; // Add units here
+            height: 300px; // Add units here
+            background-color: #fff; // White background to make it stand out
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional: shadow for better visibility
+            border-radius: 8px; // Optional: rounded corners
+        }
+    }
+
+    //manager home page
+
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        margin-left: 400px;
+        margin-top: 25px;
+
+        .content-container{
+            display: flex;
+            gap: 50px;
+        }
+    }
+    
+    // supplier price entry
+
+    .priceEntry-container{
+        margin-top: 100px;
+        height: 100vh;
+
+        .priceEntry-card{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+
+            .button{
+                width: 125px;
+            }
+        }
+    }
+
+    // manager order page
+
+    .manager-order{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;
+
+        .button{
+            width: 250px;
+            margin-left: 50px;
+        }
+    }
+
+    // entry pages
+
+    .entry-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 40px;
+    }
+}
